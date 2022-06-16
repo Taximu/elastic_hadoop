@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<allocations>
+  <queue name="job1">
+    <minResources>1024 mb,1vcores</minResources>
+    <maxResources>1024 mb,1vcores</maxResources>
+    <maxRunningApps>1</maxRunningApps>
+    <weight>1.0</weight>
+    <schedulingPolicy>fair</schedulingPolicy>
+  </queue>
+  <queue name="job2">
+    <minResources>1024 mb,1vcores</minResources>
+    <maxResources>8192 mb,8vcores</maxResources>
+    <maxRunningApps>1</maxRunningApps>
+    <weight>1.0</weight>
+    <schedulingPolicy>fair</schedulingPolicy>
+  </queue>
+  <user name="maxim">
+    <maxRunningApps>3</maxRunningApps>
+  </user>
+  <userMaxAppsDefault>3</userMaxAppsDefault>
+ <fairSharePreemptionTimeout>10</fairSharePreemptionTimeout>
+</allocations>
